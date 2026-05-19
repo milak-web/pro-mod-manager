@@ -1,82 +1,95 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PRO Mod Manager</title>
-  <meta name="description" content="Professional Windows mod profile manager with fast profile switching and clean installer workflow." />
+  <meta name="description" content="PRO Mod Manager is a native Windows app for instant mod profile switching, clean state tracking, and reliable game folder control." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="glow glow-a" aria-hidden="true"></div>
-  <div class="glow glow-b" aria-hidden="true"></div>
+  <div class="bg-layer bg-grid" aria-hidden="true"></div>
+  <div class="bg-layer bg-glow" aria-hidden="true"></div>
 
-  <main class="site">
-    <nav class="topbar">
-      <div class="brand">PRO MOD MANAGER</div>
-      <div class="top-actions">
-        <a href="https://github.com/milak-web/pro-mod-manager" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://github.com/milak-web/pro-mod-manager/releases/latest" target="_blank" rel="noreferrer">Latest Release</a>
-      </div>
+  <header class="topbar">
+    <a class="brand" href="https://github.com/milak-web/pro-mod-manager" target="_blank" rel="noreferrer">PRO MOD MANAGER</a>
+    <nav class="top-links" aria-label="Main links">
+      <a href="https://github.com/milak-web/pro-mod-manager" target="_blank" rel="noreferrer">Repository</a>
+      <a href="https://github.com/milak-web/pro-mod-manager/releases/latest" target="_blank" rel="noreferrer">Releases</a>
+      <a href="https://milak-web.github.io/pro-mod-manager/" target="_blank" rel="noreferrer">Website</a>
     </nav>
+  </header>
 
+  <main class="page">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">WINDOWS NATIVE MOD WORKFLOW</p>
-        <h1>Switch Full Mod Profiles<br>In Seconds</h1>
-        <p class="lead">Build custom loadouts, change profiles instantly, and keep your game directory controlled with reliable file tracking.</p>
+        <p class="kicker">NATIVE WINDOWS MOD CONTROL</p>
+        <h1>Build Profiles.<br>Switch Instantly.<br>Stay Organized.</h1>
+        <p class="lead">PRO Mod Manager gives you fast profile switching with tracked file operations, so your game setup stays clean and repeatable every time.</p>
 
-        <div class="cta-row">
+        <div class="hero-cta">
           <a class="btn btn-primary" href="https://github.com/milak-web/pro-mod-manager/releases/latest" target="_blank" rel="noreferrer">Download Installer</a>
-          <a class="btn btn-ghost" href="https://github.com/milak-web/pro-mod-manager/releases/latest" target="_blank" rel="noreferrer">Portable EXE</a>
+          <a class="btn btn-ghost" href="https://github.com/milak-web/pro-mod-manager/releases/latest" target="_blank" rel="noreferrer">Download Portable EXE</a>
         </div>
+
+        <ul class="stats" aria-label="Project stats">
+          <li><strong>Native</strong><span>Desktop App</span></li>
+          <li><strong>JSON</strong><span>Local State</span></li>
+          <li><strong>1 Click</strong><span>Profile Switch</span></li>
+        </ul>
       </div>
 
-      <div class="hero-card">
-        <img src="assets/app-icon.png" alt="PRO Mod Manager icon" class="hero-icon" />
-        <div class="hero-metrics">
+      <aside class="hero-panel" aria-label="Visual summary card">
+        <img src="assets/app-icon.png" alt="PRO Mod Manager app icon" class="app-icon" />
+        <div class="panel-list">
           <article>
-            <h3>Profile-Based</h3>
-            <p>Organize separate mod stacks per game or playstyle.</p>
+            <h2>Profile Presets</h2>
+            <p>Keep separate mod stacks for every game and style.</p>
           </article>
           <article>
-            <h3>Native Desktop</h3>
-            <p>Fast local operations with zero browser dependency.</p>
+            <h2>File Tracking</h2>
+            <p>Move mod files predictably between repo and game folder.</p>
           </article>
           <article>
-            <h3>Release Ready</h3>
-            <p>Portable EXE and installer distributed via GitHub Releases.</p>
+            <h2>Release Ready</h2>
+            <p>Installer and portable EXE distributed through GitHub Releases.</p>
           </article>
         </div>
-      </div>
+      </aside>
     </section>
 
-    <section class="feature-grid">
-      <article class="feature">
-        <h2>Safe Mod Activation</h2>
-        <p>Moves tracked files between repository and game directories while preserving profile state and reducing manual mistakes.</p>
+    <section class="feature-band" aria-label="Feature highlights">
+      <article class="feature-card">
+        <h3>Fast Profile Switching</h3>
+        <p>Swap mod setups in seconds without manual file juggling.</p>
       </article>
-      <article class="feature">
-        <h2>Clean State Management</h2>
-        <p>Uses local JSON state to remember active mods, current profile, and file mapping history for predictable switching.</p>
+      <article class="feature-card">
+        <h3>Controlled State</h3>
+        <p>Track active mods and file maps in one local state workflow.</p>
       </article>
-      <article class="feature">
-        <h2>Installer + Portable</h2>
-        <p>Use full Windows installer for standard setup or portable executable for direct launch.</p>
+      <article class="feature-card">
+        <h3>Built For Real Use</h3>
+        <p>Designed for daily mod management, not one-time demos.</p>
       </article>
     </section>
 
-    <section class="bottom">
-      <a class="bottom-link" href="https://github.com/milak-web/pro-mod-manager" target="_blank" rel="noreferrer">
-        View Source Code
-      </a>
-      <a class="bottom-link" href="https://milak-web.github.io/pro-mod-manager/" target="_blank" rel="noreferrer">
-        Live Project Site
-      </a>
+    <section class="split">
+      <article class="split-card">
+        <p class="mini">Source First</p>
+        <h3>Clean Repository Structure</h3>
+        <p>Source code, build scripts, installer script, and website are versioned in one place. Binaries are shipped as release assets.</p>
+        <a href="https://github.com/milak-web/pro-mod-manager" target="_blank" rel="noreferrer">Browse source</a>
+      </article>
+
+      <article class="split-card">
+        <p class="mini">Release Workflow</p>
+        <h3>Installer + Portable</h3>
+        <p>Use setup EXE for standard installation or run portable EXE directly for quick deployment.</p>
+        <a href="https://github.com/milak-web/pro-mod-manager/releases/latest" target="_blank" rel="noreferrer">Open latest release</a>
+      </article>
     </section>
   </main>
 </body>
