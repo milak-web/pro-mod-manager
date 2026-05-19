@@ -1,4 +1,4 @@
-﻿# PRO Mod Manager
+# PRO Mod Manager
 
 Professional Windows mod profile manager for switching game mod setups safely and fast.
 
@@ -63,7 +63,7 @@ installer/mod_manager_setup_clean.iss
 ## Downloads
 
 - Latest Release page:
-  - [https://github.com/milak-web/pro-mod-manager-final/releases/latest](https://github.com/milak-web/pro-mod-manager-final/releases/latest)
+  - [https://github.com/milak-web/pro-mod-manager/releases/latest](https://github.com/milak-web/pro-mod-manager/releases/latest)
 
 Release assets include:
 
@@ -72,7 +72,7 @@ Release assets include:
 
 ## Website
 
-- Live site: [https://milak-web.github.io/pro-mod-manager-final/](https://milak-web.github.io/pro-mod-manager-final/)
+- Live site: [https://milak-web.github.io/pro-mod-manager/](https://milak-web.github.io/pro-mod-manager/)
 
 ## License
 
