@@ -1,0 +1,2 @@
+# No third-party runtime dependencies required for source execution.
+# Uses Python standard library + Tkinter (included with standard Windows Python).

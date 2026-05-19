@@ -1,55 +1,79 @@
 ﻿# PRO Mod Manager
 
-A native Windows mod profile manager for quickly switching game mod sets with a clean desktop workflow.
+Professional Windows mod profile manager for switching game mod setups safely and fast.
 
 ![PRO Mod Manager Icon](assets/app-icon.png)
 
+## Overview
+
+PRO Mod Manager helps you:
+
+- Create and switch mod profiles per game.
+- Activate/deactivate mods with tracked file operations.
+- Keep local profile state in JSON for reliable rollback.
+- Use either a native portable EXE or a full installer release.
+
+## Project Status
+
+This repository is now **source-first**.
+
+- Source code is included and versioned.
+- Build scripts and installer script are included.
+- Binary files are distributed through **GitHub Releases**.
+
+## Repository Structure
+
+```text
+src/                     # Main Python application source
+scripts/                 # Build helpers (native EXE)
+installer/               # Inno Setup script for installer
+assets/                  # Project icon and visual assets
+docs/                    # GitHub Pages website
+```
+
+## Run From Source
+
+1. Install Python 3.11+.
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run app:
+
+```bash
+python src/pro_mod_manager.py
+```
+
+## Build Native EXE
+
+```bash
+python scripts/build_exe.py
+```
+
+## Build Installer
+
+Use Inno Setup Compiler with:
+
+```text
+installer/mod_manager_setup_clean.iss
+```
+
 ## Downloads
 
-- **Installer (recommended):** `PRO_Mod_Manager_Setup.exe`
-- **Portable app:** `PRO_Mod_Manager_Native.exe`
+- Latest Release page:
+  - [https://github.com/milak-web/pro-mod-manager-final/releases/latest](https://github.com/milak-web/pro-mod-manager-final/releases/latest)
 
-## What It Does
+Release assets include:
 
-- Create and switch between mod profiles
-- Activate/deactivate mods by profile
-- Move mod files safely between repository and game folder
-- Track active mods and profile state in one local JSON state file
-- Optional profile-themed background art while online
-
-## Why This Build
-
-This repository is intentionally minimal and release-focused:
-
-- Final app executable
-- Final installer executable
-- Product website and documentation
-
-No prototype code or unrelated files are included.
-
-## Install
-
-1. Run `PRO_Mod_Manager_Setup.exe`
-2. Choose install directory
-3. Launch **PRO Mod Manager**
-4. Set your Game Folder and Mod Repository
-5. Initialize and start managing profiles
-
-## Portable Mode
-
-If you prefer no install wizard, run `PRO_Mod_Manager_Native.exe` directly.
-
-## Data Storage
-
-The app writes runtime data locally near the app installation:
-
-- `mod_manager_state.json`
-- `profile_background_cache/`
+- `PRO_Mod_Manager_Native.exe`
+- `PRO_Mod_Manager_Setup.exe`
 
 ## Website
 
-Project page is in `docs/` and is ready for GitHub Pages.
+- Live site: [https://milak-web.github.io/pro-mod-manager-final/](https://milak-web.github.io/pro-mod-manager-final/)
 
----
+## License
 
-Built for fast, practical mod management on Windows.
+Personal project by MK2. Add a license file if you want public reuse permissions.

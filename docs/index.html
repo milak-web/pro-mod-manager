@@ -4,48 +4,80 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PRO Mod Manager</title>
-  <meta name="description" content="PRO Mod Manager - native Windows game mod profile manager." />
+  <meta name="description" content="Professional Windows mod profile manager with fast profile switching and clean installer workflow." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <main class="wrap">
-    <header class="hero">
-      <img src="assets/app-icon.png" alt="PRO Mod Manager icon" class="app-icon" />
-      <div>
-        <p class="tag">WINDOWS MOD TOOLKIT</p>
-        <h1>PRO Mod Manager</h1>
-        <p class="sub">Create profiles, switch mods instantly, and keep your game setup organized.</p>
-      </div>
-    </header>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
 
-    <section class="cards">
-      <article class="card">
-        <h2>Profile Switching</h2>
-        <p>Build separate loadouts for each game or playstyle and jump between them in seconds.</p>
+  <main class="site">
+    <nav class="topbar">
+      <div class="brand">PRO MOD MANAGER</div>
+      <div class="top-actions">
+        <a href="https://github.com/milak-web/pro-mod-manager-final" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/milak-web/pro-mod-manager-final/releases/latest" target="_blank" rel="noreferrer">Latest Release</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">WINDOWS NATIVE MOD WORKFLOW</p>
+        <h1>Switch Full Mod Profiles<br>In Seconds</h1>
+        <p class="lead">Build custom loadouts, change profiles instantly, and keep your game directory controlled with reliable file tracking.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/milak-web/pro-mod-manager-final/releases/latest" target="_blank" rel="noreferrer">Download Installer</a>
+          <a class="btn btn-ghost" href="https://github.com/milak-web/pro-mod-manager-final/releases/latest" target="_blank" rel="noreferrer">Portable EXE</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="assets/app-icon.png" alt="PRO Mod Manager icon" class="hero-icon" />
+        <div class="hero-metrics">
+          <article>
+            <h3>Profile-Based</h3>
+            <p>Organize separate mod stacks per game or playstyle.</p>
+          </article>
+          <article>
+            <h3>Native Desktop</h3>
+            <p>Fast local operations with zero browser dependency.</p>
+          </article>
+          <article>
+            <h3>Release Ready</h3>
+            <p>Portable EXE and installer distributed via GitHub Releases.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-grid">
+      <article class="feature">
+        <h2>Safe Mod Activation</h2>
+        <p>Moves tracked files between repository and game directories while preserving profile state and reducing manual mistakes.</p>
       </article>
-      <article class="card">
-        <h2>Native Performance</h2>
-        <p>Desktop-first workflow with fast file operations and clean state tracking.</p>
+      <article class="feature">
+        <h2>Clean State Management</h2>
+        <p>Uses local JSON state to remember active mods, current profile, and file mapping history for predictable switching.</p>
       </article>
-      <article class="card">
+      <article class="feature">
         <h2>Installer + Portable</h2>
-        <p>Use setup wizard for standard install, or run the portable EXE directly.</p>
+        <p>Use full Windows installer for standard setup or portable executable for direct launch.</p>
       </article>
     </section>
 
-    <section class="download">
-      <h2>Downloads</h2>
-      <div class="buttons">
-        <a class="btn primary" href="https://github.com/milak-web/pro-mod-manager/raw/main/PRO_Mod_Manager_Setup.exe">Download Installer</a>
-        <a class="btn" href="https://github.com/milak-web/pro-mod-manager/raw/main/PRO_Mod_Manager_Native.exe">Download Portable EXE</a>
-      </div>
-      <p class="note">Windows 10/11 • Local state file • Optional online profile art</p>
+    <section class="bottom">
+      <a class="bottom-link" href="https://github.com/milak-web/pro-mod-manager-final" target="_blank" rel="noreferrer">
+        View Source Code
+      </a>
+      <a class="bottom-link" href="https://milak-web.github.io/pro-mod-manager-final/" target="_blank" rel="noreferrer">
+        Live Project Site
+      </a>
     </section>
   </main>
 </body>
 </html>
-
